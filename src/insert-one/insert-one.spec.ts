@@ -1,5 +1,3 @@
 describe("InsertOne", () => {
-  it("should...", () => {
-    
-  });
+  it("should...", () => {});
 });

@@ -18,7 +18,7 @@ describe("Config", () => {
   it("should get var", () => {
     const APP_ID = "FAKE";
     config({
-      APP_ID
+      APP_ID,
     });
 
     const result = get("APP_ID");
