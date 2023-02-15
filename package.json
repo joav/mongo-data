@@ -10,7 +10,12 @@
     "prettier": "prettier --check src/**/*.ts",
     "prettier:write": "prettier --write src/**/*.ts",
     "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint --fix src/**/*.ts"
+    "lint:fix": "eslint --fix src/**/*.ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run prettier:write && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "files": [
     "dist/**/*.js",
