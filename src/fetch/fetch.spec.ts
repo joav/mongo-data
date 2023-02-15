@@ -15,7 +15,7 @@ describe("Fetch", () => {
     const fn = () => Promise.reject(ERROR);
     setFetchFn(fn);
     const fnSeted = getFetchFn();
-    
+
     expect(fnSeted).toEqual(fn);
     try {
       await fnSeted("FAKE", {});
@@ -25,8 +25,8 @@ describe("Fetch", () => {
   });
 
   it("should do fetch", async () => {
-    const expected = {foo: "bar"};
-    const response = {json: () => Promise.resolve(expected)};
+    const expected = { foo: "bar" };
+    const response = { json: () => Promise.resolve(expected) };
     const fn = () => Promise.resolve(response);
     setFetchFn(fn);
 

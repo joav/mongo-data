@@ -4,9 +4,9 @@ import { uri } from "./uri";
 jest.mock(
   "../config/config",
   () => ({
-    get: () => DATA_VAR
+    get: () => DATA_VAR,
   }),
-  { virtual: true }
+  { virtual: true },
 );
 
 describe("Fetch Uri", () => {

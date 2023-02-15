@@ -5,9 +5,9 @@ const DATA_API_KEY = "FAKE";
 jest.mock(
   "../config/config",
   () => ({
-    get: () => DATA_API_KEY
+    get: () => DATA_API_KEY,
   }),
-  { virtual: true }
+  { virtual: true },
 );
 
 describe("Fetch CreateOptions", () => {
@@ -16,11 +16,11 @@ describe("Fetch CreateOptions", () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "api-key": DATA_API_KEY
+        "api-key": DATA_API_KEY,
       },
-      body: "{}"
+      body: "{}",
     };
-    
+
     const result = createOptions({});
 
     expect(result).toEqual(expected);
