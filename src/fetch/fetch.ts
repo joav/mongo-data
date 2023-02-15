@@ -3,8 +3,8 @@ type FetchFn<T = object> = (url: string, options: object) => Promise<JsonRespons
 
 let fetchFn: FetchFn = () => Promise.reject("Fetch function not configured");
 
-export const setFetchFn = <T>(fn: FetchFn<T>) => {
-  fetchFn = fn as FetchFn;
+export const setFetchFn = (fn: FetchFn) => {
+  fetchFn = fn;
 };
 
 export const getFetchFn = <T>(): FetchFn<T> => fetchFn as FetchFn<T>;
