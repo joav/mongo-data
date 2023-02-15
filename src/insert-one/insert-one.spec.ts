@@ -25,7 +25,7 @@ jest.mock(
 jest.mock(
   "../fetch/fetch",
   () => ({
-    doFetch: () => Promise.resolve({insertedId}),
+    doFetch: () => Promise.resolve({ insertedId }),
   }),
   { virtual: true },
 );
