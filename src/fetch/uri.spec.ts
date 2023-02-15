@@ -12,7 +12,7 @@ jest.mock(
 describe("Fetch Uri", () => {
   it("should create correct uri", () => {
     const endpoint = "FAKE";
-    const expected = `https://data.mongodb-api.com/app/${DATA_VAR}/endpoint/data/v1/action/${endpoint}`;
+    const expected = `${DATA_VAR}/${endpoint}`;
 
     const result = uri(endpoint);
 
