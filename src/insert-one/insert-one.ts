@@ -1,7 +1,4 @@
-import { createOptions } from "../fetch/create-options";
-import { createQuery } from "../fetch/create-query";
-import { doFetch } from "../fetch/fetch";
-import { uri } from "../fetch/uri";
+import { createOptions, createQuery, doFetch, uri } from "../fetch";
 
 export async function insertOne(collection: string, document: object): Promise<string> {
   console.log("Call insertOne");
