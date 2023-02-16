@@ -31,7 +31,7 @@ jest.mock(
 
 describe("Aggregate", () => {
   it("should aggregate", async () => {
-    const result = await aggregate("FAKE", [{ "$match": {} }]);
+    const result = await aggregate("FAKE", [{ $match: {} }]);
 
     expect(result).toBeTruthy();
   });
