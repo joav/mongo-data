@@ -15,9 +15,10 @@ const configVars: ConfigVars = {
 const isConfigVarsKey = (key: string): key is ConfigVarsKey => key in configVars;
 
 export function config(data: Partial<ConfigVars>) {
-  for (const key in data) {
+  const dataMap = new Map(Object.entries(data));
+  for (const [key, value] of dataMap) {
     if (isConfigVarsKey(key)) {
-      set(key, data[key]);
+      set(key, value);
     }
   }
 }
