@@ -1,6 +1,7 @@
 export * from "./aggregate";
 export * from "./config";
 export * from "./delete-many";
+export * from "./delete-one";
 export * from "./fetch";
 export * from "./find";
 export * from "./find-one";
