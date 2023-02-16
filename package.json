@@ -1,6 +1,6 @@
 {
   "name": "@joav/mongo-data",
-  "version": "1.4.1",
+  "version": "1.5.0",
   "description": "Connect to mongo atlas data api",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,1 +1,1 @@
-export * from './delete-many';
+export * from "./delete-many";

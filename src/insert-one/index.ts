@@ -1,1 +1,1 @@
-export * from './insert-one';
+export * from "./insert-one";
