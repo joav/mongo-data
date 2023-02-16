@@ -34,7 +34,7 @@ jest.mock(
 
 describe("UpdateOne", () => {
   it("should updateOne", async () => {
-    const expected = {matchedCount, modifiedCount};
+    const expected = { matchedCount, modifiedCount };
 
     const result = await updateOne("FAKE", {}, {});
 
