@@ -31,7 +31,7 @@ jest.mock(
 
 describe("Find", () => {
   it("shoould find", async () => {
-    const result = await find("FAKE", { filter: {}});
+    const result = await find("FAKE", { filter: {} });
 
     expect(result).toBeTruthy();
   });
