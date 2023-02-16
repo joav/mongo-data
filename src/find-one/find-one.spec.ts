@@ -24,14 +24,14 @@ jest.mock(
 jest.mock(
   "../fetch/fetch",
   () => ({
-    doFetch: () => Promise.resolve({document: {}}),
+    doFetch: () => Promise.resolve({ document: {} }),
   }),
   { virtual: true },
 );
 
 describe("FindOne", () => {
   it("should findOne", async () => {
-    const result = await findOne("FAKE", {filter: {}});
+    const result = await findOne("FAKE", { filter: {} });
 
     expect(result).toBeTruthy();
   });
