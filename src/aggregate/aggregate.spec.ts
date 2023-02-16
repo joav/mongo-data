@@ -1,4 +1,4 @@
-import { find } from "./find";
+import { aggregate } from "./aggregate";
 
 jest.mock(
   "../fetch/create-query",
@@ -29,9 +29,9 @@ jest.mock(
   { virtual: true },
 );
 
-describe("Find", () => {
-  it("should find", async () => {
-    const result = await find("FAKE", { filter: {} });
+describe("Aggregate", () => {
+  it("should aggregate", async () => {
+    const result = await aggregate("FAKE", [{ "$match": {} }]);
 
     expect(result).toBeTruthy();
   });

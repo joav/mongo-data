@@ -1,3 +1,4 @@
+export * from "./aggregate";
 export * from "./config";
 export * from "./delete-many";
 export * from "./fetch";
