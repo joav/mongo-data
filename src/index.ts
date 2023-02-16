@@ -6,4 +6,5 @@ export * from "./find";
 export * from "./find-one";
 export * from "./insert-many";
 export * from "./insert-one";
+export * from "./update-many";
 export * from "./update-one";
